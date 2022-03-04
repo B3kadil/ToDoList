@@ -1,0 +1,187 @@
+    @import url('reset.css');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Patrick+Hand&display=swap');
+    body {
+        font-family: 'Patrick Hand', cursive;
+    }
+    
+    body {
+        background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+    }
+    
+    .container {
+        position: absolute;
+        width: 40%;
+        height: 70%;
+        top: 12%;
+        left: 30%;
+        right: 40%;
+        background-color: #dee8ec;
+        border-radius: 5%;
+    }
+    
+    .name {
+        font-family: 'Lobster', cursive;
+        font-size: 90px;
+        text-align: center;
+    }
+    
+    .input {
+        position: relative;
+        display: block;
+        width: 70%;
+        height: 10%;
+        left: 15%;
+        top: 5%;
+        right: 15%;
+    }
+    
+    .inputToDo {
+        width: 80%;
+        height: 90%;
+        border-style: 4px;
+        font-size: 45px;
+        font-family: 'Patrick Hand', cursive;
+    }
+    
+    .darkLightMode {
+        color: black;
+        position: absolute;
+        top: 6%;
+        width: 7%;
+        height: 7%;
+        left: 7%;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 9px #999;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.6s;
+    }
+    
+    .darkLightMode:hover {
+        background-color: #bbe7f8;
+        color: #f6ff7a;
+    }
+    
+    .darkLightMode:active {
+        background-color: #5fd2ff;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    
+    .btnInput {
+        position: relative;
+        width: 10%;
+        height: 80%;
+        left: 2%;
+        bottom: 12%;
+        border-radius: 4px;
+        background-color: #fccfd7;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+    
+    .btnInput:hover {
+        background-color: #C9FFBF;
+        color: black;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .todo li {
+        padding-left: 10px;
+        flex: 1;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .todo {
+        width: 70%;
+        border: 0.1px #95e1ff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        transition: all 1s ease;
+    }
+    
+    .tasks {
+        position: relative;
+        top: 14%;
+        left: 14%;
+    }
+    
+    .complete-btn,
+    .delete-btn {
+        display: flexbox;
+        position: relative;
+        width: 10%;
+        height: 2rem;
+        font-size: large;
+        border-radius: 4px;
+        background-color: #9db802;
+    }
+    
+    .delete-btn {
+        background-color: #c33124;
+    }
+    
+    .delete-btn:hover {
+        background-color: #dd3020;
+    }
+    
+    .complete-btn:hover {
+        background-color: #b2d100;
+    }
+    
+    .fa-check,
+    .fa-minus {
+        pointer-events: none;
+    }
+    
+    .completed {
+        text-decoration: line-through;
+        opacity: 0.5;
+    }
+    
+    .fall {
+        transform: translateY(8rem) rotateZ(20deg);
+        opacity: 0;
+    }
+    
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        border: none;
+        width: 5rem;
+        cursor: pointer;
+        font-family: 'Patrick Hand', cursive;
+        background-color: #ffffff;
+        border-radius: 4px;
+        padding: 0.2rem;
+    }
+    
+    .select {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        padding: 0.4rem;
+    }
+    
+    .select::after {
+        content: "\25BC";
+        background-color: black;
+        color: white;
+        position: relative;
+        top: 0;
+        right: 30px;
+        padding: 0.1rem;
+        pointer-events: none;
+        transition: all 0.5s ease;
+    }
+    
+    .select:hover::after {
+        color: black;
+        background: white;
+    }
